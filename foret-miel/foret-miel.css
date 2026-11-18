@@ -122,9 +122,28 @@ body .mat-mdc-mini-fab {
   border-radius: 999px !important;
 }
 
+/* Mode focus : grosse bande pleine largeur */
+body focus-mode-overlay task, body focus-mode-overlay .task,
+body focus-mode-main task, body focus-mode-main .task,
+body focus-mode-main .current-task,
+body .focus-mode task, body .focus-mode .task {
+  width: 100vw !important;
+  max-width: none !important;
+  margin: 0 calc(50% - 50vw) !important;
+  padding: 28px 0 !important;
+  min-height: 120px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  border-top: 1px solid rgba(253, 202, 137, .25) !important;
+  border-bottom: 1px solid rgba(253, 202, 137, .25) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .35) !important;
+  transform: none !important;
+  animation: none !important;
+}
+
 /* Signature visible */
 body::after {
-  content: "Forêt Miel · fait avec 🍯 par Onzebleu";
+  content: "Forêt Miel · fait avec <3 par Onzebleu";
   position: fixed;
   bottom: 8px;
   right: 12px;
